@@ -75,6 +75,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="textLabel" destination="Jcr-qX-B7T" id="V3g-bv-2Yl"/>
+                                    <segue destination="ljD-dV-frr" kind="show" identifier="MasterToDetail" id="RJE-6K-FKW"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -101,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJr-1k-QkJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJr-1k-QkJ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="492"/>
                             </imageView>
                         </subviews>

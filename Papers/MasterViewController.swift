@@ -34,4 +34,15 @@ class MasterViewController: UICollectionViewController {
         return cell;
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MasterToDetail" {
+            if let indexPath = collectionView!.indexPathsForSelectedItems()!.first {
+                if let paper = papersDataSource.paperForItemAtIndexPath(indexPath) {
+                    let detailViewController = segue.destinationViewController as! DetailViewController
+                    detailViewController.paper = paper
+                }
+            }
+        }
+    }
+    
 }
